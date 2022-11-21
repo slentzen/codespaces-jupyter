@@ -5,7 +5,9 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "",
+  "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "postCreateCommand": "pip3 install wheel",
+  "postCreateCommand": "pip3 install manimgl",
   "customizations": {
     "codespaces": {
       "openFiles": []
@@ -13,7 +15,8 @@
     "vscode": {
       "extensions": [
         "ms-toolsai.jupyter",
-        "ms-python.python"
+        "ms-python.python",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   }
